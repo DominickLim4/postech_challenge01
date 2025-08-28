@@ -8,5 +8,12 @@
   left: 351px;
   border-width: 1px;
   border-style: solid;
-  border-color: #000; /* você pode trocar a cor conforme desejar */
+  border-color: #000; 
+}
+.main {
+  width: 1440px;
+  height: 368px;
+  transform: rotate(0deg);
+  opacity: 1;
+  background: #121214;
 }
