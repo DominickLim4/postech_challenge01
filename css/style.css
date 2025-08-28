@@ -1,0 +1,12 @@
+.form {
+  width: 736px;
+  height: 1098px;
+  transform: rotate(0deg);
+  opacity: 1;
+  position: absolute;
+  top: 282px;
+  left: 351px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000; /* você pode trocar a cor conforme desejar */
+}
