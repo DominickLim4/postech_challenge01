@@ -12,29 +12,33 @@
         <h1>POSTECH - FULLSTACK</h1>
         <p>Desafio aula inaugural</p>
       </div>
-      <form class="form" action="">
+      <form class="form">
         <h2>Informações do grupo</h2>
+        
+        <!-- MUDANÇA 1: Todos os inputs de nome agora têm name="nome" -->
         <div class="nomes">
           <label for="nome-1">Nome</label>
-          <input id="nome-1" name="nome-1" type="text" />
+          <input id="nome-1" name="nome" type="text" />
         </div>
         <div class="nomes">
           <label for="nome-2">Nome</label>
-          <input id="nome-2" name="nome-2" type="text" />
+          <input id="nome-2" name="nome" type="text" />
         </div>
         <div class="nomes">
           <label for="nome-3">Nome</label>
-          <input id="nome-3" name="nome-3" type="text" />
+          <input id="nome-3" name="nome" type="text" />
         </div>
         <div class="nomes">
           <label for="nome-4">Nome</label>
-          <input id="nome-4" name="nome-4" type="text" />
+          <input id="nome-4" name="nome" type="text" />
         </div>
+        
         <div class="nomes">
-          <label for="nome-5">História do grupo</label>
-          <textarea name="nome-5" id="nome-5"></textarea>
+          <label for="historia">História do grupo</label>
+          <textarea name="historia" id="historia"></textarea>
         </div>
-        <button class="btn-form">Enviar</button>
+        
+        <button type="submit" class="btn-form">Enviar</button>
       </form>
     </main>
     <script src="js/script.js"></script>
