@@ -7,47 +7,41 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background-color: #f0f2f5; /* Cor de fundo cinza claro para a área do formulário */
+    background-color: #f0f2f5; /* Cor de fundo cinza claro */
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
 }
 
-/* --- Cabeçalho (A nova seção escura) --- */
-header.main {
-    background-color: #1c1e21; /* Fundo escuro */
-    color: #ffffff; /* Texto branco */
+/* --- Cabeçalho --- */
+.main {
     text-align: center;
-    padding: 60px 20px 100px; /* Espaçamento para criar a barra e empurrar o formulário para baixo */
+    margin-bottom: 40px;
+    color: #1c1e21; /* Cor escura para o texto do cabeçalho */
 }
 
-header.main h1 {
+.main h1 {
     font-size: 2.5rem; /* 40px */
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-header.main p {
+.main p {
     font-size: 1.125rem; /* 18px */
-    color: #bdc3c7; /* Cinza claro para o subtítulo */
+    color: #606770;
 }
 
-/* --- Conteúdo Principal --- */
-main {
-    display: flex;
-    justify-content: center;
-    padding: 0 20px; /* Espaçamento lateral */
-}
-
-/* --- Card do Formulário (Com o efeito "flutuante") --- */
+/* --- Card do Formulário --- */
 .form {
     background-color: #ffffff;
     padding: 40px;
     border-radius: 16px;
-    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.15), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
-    margin-top: -60px; /* Margem negativa para "puxar" o card para cima */
-    position: relative; /* Necessário para o empilhamento correto */
-    z-index: 1;
 }
 
 .form h2 {
@@ -58,7 +52,7 @@ main {
     font-weight: 600;
 }
 
-/* --- Campos do Formulário --- */
+/* --- Campos do Formulário (div .nomes) --- */
 .nomes {
     margin-bottom: 20px;
 }
@@ -85,7 +79,7 @@ main {
 .nomes input:focus,
 .nomes textarea:focus {
     outline: none;
-    border-color: #e84959;
+    border-color: #e84959; /* Cor de destaque vermelha */
     box-shadow: 0 0 0 3px rgba(232, 73, 89, 0.15);
 }
 
@@ -100,7 +94,7 @@ main {
     padding: 16px;
     border: none;
     border-radius: 8px;
-    background-color: #e84959;
+    background-color: #e84959; /* Vermelho do mockup */
     color: #ffffff;
     font-size: 1.1rem; /* 18px */
     font-weight: 700;
@@ -109,9 +103,9 @@ main {
 }
 
 .btn-form:hover {
-    background-color: #d13c4b;
+    background-color: #d13c4b; /* Tom mais escuro para o hover */
 }
 
 .btn-form:active {
-    transform: scale(0.98);
+    transform: scale(0.98); /* Efeito de clique */
 }
